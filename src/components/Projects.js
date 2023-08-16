@@ -10,6 +10,13 @@ const Projects = ( value, setValue ) => {
 
     })
 
+    const StyledDivider = styled(Divider)({
+        backgroundColor: 'white',
+        marginBottom: 5,
+        marginTop: 5
+
+    })
+
     return (
         <Box sx={{backgroundColor: grey[900], minHeight: 1500, padding:5}}>
             <Grid container direction={'column'} sx={{margin: 'auto', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
@@ -19,11 +26,30 @@ const Projects = ( value, setValue ) => {
                     <Paper elevation={10} sx={{width: '50%', marginTop: 10, padding: 2, backgroundColor: 'primary.main', color: 'secondary.main', minHeight: '1000px'}}>
                         <List>
                             <ListItem>
-                                <StyledTypographyHeader variant={'h4'}>News site</StyledTypographyHeader>
+                                <StyledTypographyHeader variant={'h4'} sx={{fontWeight: 'bolder'}}>News site</StyledTypographyHeader>
                             </ListItem>
                             <Typography variant={'body1'}>Skills: Django, React, Typescript, MongoDB</Typography>
                             <Typography>Description: </Typography>
-                            <Divider component={'li'} sx={{backgroundColor: 'secondary.main'}}/>
+                            <StyledDivider component={'li'}/>
+                            <ListItem>
+                                <StyledTypographyHeader variant={'h4'} sx={{fontWeight: 'bolder'}}>Short and Sweet</StyledTypographyHeader>
+                            </ListItem>
+                            <Typography variant={'body1'}>Skills: Python, NLP</Typography>
+                            <Typography>Description: </Typography>
+                            <StyledDivider component={'li'}/>
+                            <ListItem>
+                                <StyledTypographyHeader variant={'h4'} sx={{fontWeight: 'bolder'}}>Heart Transplant</StyledTypographyHeader>
+                            </ListItem>
+                            <Typography variant={'body1'}>Skills: Java</Typography>
+                            <Typography>Description: </Typography>
+                            <StyledDivider component={'li'}/>
+                            <ListItem>
+                                <StyledTypographyHeader variant={'h4'} sx={{fontWeight: 'bolder'}}>Weather Site</StyledTypographyHeader>
+                            </ListItem>
+                            <Typography variant={'body1'}>React, Javascript</Typography>
+                            <Typography>Description: </Typography>
+                            <StyledDivider component={'li'}/>
+                            {/*Add more projects here*/}
                         </List>
                     </Paper>
 

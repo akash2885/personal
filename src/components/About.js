@@ -32,7 +32,7 @@ const About = () => {
                         alt={"Akash's headshot picture"}
                     />
                 </Box>
-                <Paper elevation={10} sx={{width: '50%', backgroundColor: 'primary.main', color: 'secondary.main', fontFamily: 'Raleway', padding: 2 }}> {/* About me Start */}
+                <Paper elevation={10} sx={{width: '50%', backgroundColor: 'primary.main', color: 'secondary.main', padding: 2 }}> {/* About me Start */}
                     Hey there! I'm Akash Puzhakkal, a passionate and versatile computer science enthusiast with a keen interest in machine learning and web development. I'm all about embracing technology and using it to make a positive impact. Let me tell you a bit more about myself:
                 </Paper>
                 <Paper elevation={10} sx={{marginTop: 5, padding:2, backgroundColor: 'primary.main', color: 'secondary.main', maxWidth: '50%'}}>
