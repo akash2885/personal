@@ -6,7 +6,7 @@ const Projects = ( value, setValue ) => {
 
     const StyledTypographyHeader = styled(Typography)({
         color: 'secondary.main',
-        fontFamily: 'Raleway',
+
 
     })
 
@@ -18,7 +18,7 @@ const Projects = ( value, setValue ) => {
     })
 
     return (
-        <Box sx={{backgroundColor: grey[900], minHeight: 1500, padding:5}}>
+        <Box sx={{ minHeight: 1500, padding:5, backgroundColor: grey[900] }}>
             <Grid container direction={'column'} sx={{margin: 'auto', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                     <Typography variant={'h3'} sx={{color: 'secondary.main', fontFamily: 'Raleway'}}>
                         Projects | Skills
